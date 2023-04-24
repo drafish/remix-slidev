@@ -25,422 +25,144 @@ transition: slide-left
 css: unocss
 ---
 
-# Welcome to Slidev
-
-Presentation slides for developers
-
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
-
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
-</div>
-
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
+# Remix China 项目介绍
 
 ---
-transition: fade-out
+layout: center
 ---
+# 翻译计划
+<br />
 
-# What is Slidev?
+# 开发计划
+<br />
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+# 运营计划
+<br />
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
+# 研究计划
 
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-Here is another comment.
--->
 
 ---
 layout: default
 ---
 
-# Table of contents
+# 翻译计划
 
-```
-<Toc minDepth="1" maxDepth="5"></Toc>
-```
+#### IDE 文档
+这就是 Remix IDE 的使用文档，详细地介绍了每一个功能模块的使用方法。
 
-<Toc></Toc>
-
----
-transition: slide-up
-
-level: 2
----
-
-# Navigation
-
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
-
-### Keyboard Shortcuts
-
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
-
-<!-- https://sli.dev/guide/animations.html#click-animations -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+- 文档地址：https://remix-ide.readthedocs.io/en/latest/index.html
+- 文档仓库地址：https://github.com/ethereum/remix-ide
+- crowdin：https://crowdin.com/project/remix-translation/zh-CN
+- 翻译完成度：71%
+- 审阅完成度：0
+- 单词量：29630
 
 ---
-layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
+layout: default
 ---
 
-# Code
+# 翻译计划
+#### IDE 操作界面
+目前为止 IDE 操作界面的中文翻译完成度已经非常高了，估计超过 90% 。点击下面的链接就可以体验中文版的 Remix IDE 。
+https://remix.ethereum.org/?#lang=zh
 
-Use code snippets and get the highlighting directly![^1]
-
-```ts {all|2|1-6|9|all}
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
-
-function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
-```
-
-<arrow v-click="3" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
-
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
-
-<style>
-.footnotes-sep {
-  @apply mt-20 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
+- IDE 仓库地址：https://github.com/ethereum/remix-project
+- crowdin：Remix 团队计划是把操作界面的翻译放到 crowdin 上维护，但目前还没放上去
+- 翻译完成度：超过 90%
+- 审阅完成度：0
 
 ---
+layout: default
+---
 
-# Components
+# 翻译计划
+#### LearnEth 教程
+LearnEth 是 Remix IDE 上的一个插件，它可以把 Remix IDE 变成一个交互式教学平台。大家可以通过下面的链接先体验下
+https://remix.ethereum.org/?#activate=LearnEth
 
-<div grid="~ cols-2 gap-4">
-<div>
+Remix 团队已经开发了两套课程。将来可能还会开发更多的课程。
 
-You can use Vue components directly inside your slides.
+- 教程仓库地址：https://github.com/ethereum/remix-workshops  https://github.com/Aniket-Engg/solidity-school
+- crowdin：LearnETH 教程一旦制作完成就不会经常更新，是否要放到 crowdin 上维护尚需讨论
+- 翻译完成度：0
+- 审阅完成度：0
+- 单词量：19455 + 3656
 
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
+---
+layout: default
+---
 
-```html
-<Counter :count="10" />
-```
+# 开发计划
 
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
+#### China Fork
+我们会在国内建 Remix 项目的镜像站，包括 IDE、文档、官网。还有 Solidity 的 js 编译器镜像站。
 
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
+但即使建了镜像站，还是有可能会受墙的影响。特别是 Remix IDE 有些静态文件是直接通过链接的形式引入的。这其中就有 google、github 的链接。一旦这些静态文件被墙，Remix IDE 就无法正常使用。
 
-</div>
-<div>
+所以我们会开发且维护一个国内的分支，把这些静态文件的链接换成国内的链接。这个分支不会提 PR 给 Remix 的 master 分支，只会不断地将 master 分支合并到这个分支。
 
-```html
-<Tweet id="1390115482657726468" />
-```
+---
+layout: default
+---
 
-<Tweet id="1390115482657726468" scale="0.65" />
+# 开发计划
 
-</div>
-</div>
+#### 助推国际化
+对国际化的支持本来就在 Remix 团队的开发计划之内的。但因为优先级比较低，这个功能是一拖再拖。
 
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
+https://github.com/ethereum/remix-project/issues/50
 
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
+这个功能早在2020年就提出了，但直到2022年才开发出来。而实现这个功能的 PR 就是 Remix China 贡献的。
+
+我估计，就算我们什么都不做，Remix 团队也迟早会实现国际化。但具体什么时候就不好说了。
+
+而 Remix China 项目很多地方需要依赖这个国际化。特别是前面提到的翻译计划，如果要对 Remix IDE 操作界面的文案进行翻译，那前提就是这些文案本身要支持多语言切换。所以我们打算助推一把，帮助 Remix 项目尽快实现国际化支持。
+---
+layout: default
+---
+
+# 运营计划
+
+#### 自媒体
+Remix 团队有三个自媒体
+- Twitter: https://twitter.com/EthereumRemix
+- Medium: https://medium.com/remix-ide
+- YouTube: https://www.youtube.com/channel/UCjTUPyFEr2xDGN6Cg8nKDaA
+
+我们已经建了一个微信公众号，后续会把 Remix 团队在自媒体上发布的内容都同步到这个公众号上。我们也会发布一些原创的内容
+---
+layout: default
+---
+
+# 运营计划
+
+#### 交流群
+Remix 项目的交流群在 Gitter 上，同样是被墙的。我们会建一个微信群作为国内 Remix 用户的交流群。这个交流群的作用就是把国内的 Remix 用户聚到一起，互相帮助，解决在使用 Remix 的过程中碰到的一些问题。
 
 
 ---
-class: px-20
+layout: default
 ---
 
-# Themes
+# 研究计划
+研究计划是未来打算做的事。基本上都是一些需要先投入大量的时间做技术调研，然后才能明确具体要怎么做的事。
+#### WebContainer
+简单来说就是，WebContainer 就是⼀个可以运⾏在浏览器⻚⾯中的微型操作系统。如果 Remix IDE 能结合这项技术，那整个使⽤体验能再上升⼀个 level 。
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
+⽬前国内智能合约 IDE 领域做得最好的就是纯⽩矩阵的 ChainIDE 。我⽤过 ChainIDE，使⽤体验完全不如 Remix 。但是 ChainIDE 有⼀个 Remix 没有的优点，就是可以提供 linux 环境，这样在 ChainIDE 上就可以⽤ truffle、hardhat、ganache 了。不过 ChainIDE 的实现⽅案⾮常笨重，是在服务器上起⼀个 linux 虚拟机，然后通过 websocket 跟前端通信。这种中⼼化的⽅案成本很⾼的，⽤户量稍微⼤⼀点，服务器估计就扛不住了。
 
-<div grid="~ cols-2 gap-2" m="-t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
+如果 Remix 能结合 WebContainer 的话，我估计能把 ChainIDE 秒成渣渣。
 
 ---
-preload: false
+layout: default
 ---
 
-# Animations
+# 研究计划
+#### VSCODE
+这个改进估计工作量会比较大，而且如果真要做的话就需要维护网页版和桌面版两个版本了。我感觉是有点划不来。针对桌面版IDE，其实我有一套更好的开发方案。就是把Remix IDE 上的功能通过插件的形式移植到VSCODE上。这样就不需要去关心怎么集成terminal了，因为VSCODE本身就集成了terminal。我们只需要关心哪些功能是Remix IDE上有的，但是VSCODE没有的，把这些功能给搬过来就好了。而且VSCODE也有网页版，而且网页版还可以集成github codespaces，这样云端开发环境也搞定了。而且后面如果我们想集成chatgpt来写合约，在VSCODE上也会容易很多。我感觉这个方案甚至比Remix IDE还要好，没有弱点
 
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
-
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# LaTeX
-
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
-
-<br>
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-3 gap-10 pt-4 -mb-6">
-
-```mermaid {scale: 0.5}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectivness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
-
----
-src: ./pages/multiple-entries.md
-hide: false
----
-
----
-layout: center
-class: text-center
----
-
-# Learn More
-
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+#### 数字人民币
 
 ---
 layout: end
